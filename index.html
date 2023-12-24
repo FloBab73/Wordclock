@@ -1,38 +1,52 @@
+<!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="wordclock">
-            <div class="line">
-                <div class="number active">zahl</div>
-                <div class="number">zahl</div>
-            </div>
-            <div class="line">
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-            </div>
-            <div class="line">
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-            </div>
-            <div class="line">
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-            </div>
-            <div class="line">
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-            </div>
-            <div class="line">
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-                <div class="number">zahl</div>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <title>Wordclock Demo</title>
+    <link rel="stylesheet" type="text/css" href="wordclock.css" />
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="wordclock.js"></script>
+</head>
+<body>
+    <div id="wordclock" class="wordclock">
+        <div class="line">
+            <div id="fanfare" class="active" >IT IS</div>
+            <div id="min-30"  class="minute" >HALF</div>
+            <div id="min-10"  class="minute" >TEN</div>
         </div>
-    </body>
+        <div class="line">
+            <div id="min-15" class="minute" >QUARTER</div>
+            <div id="min-20" class="minute" >TWENTY</div>
+        </div>
+        <div class="line">
+            <div id="min-5"  class="minute" >FIVE</div>
+            <div id="minute"                >MINUTES</div>
+            <div id="to"                    >TO</div>
+        </div>
+        <div class="line">
+            <div id="past"                >PAST</div>
+            <div id="hour-1" class="hour" >ONE</div>
+            <div id="hour-3" class="hour" >THREE</div>
+        </div>
+        <div class="line">
+            <div id="hour-2" class="hour" >TWO</div>
+            <div id="hour-4" class="hour" >FOUR</div>
+            <div id="hour-5" class="hour" >FIVE</div>
+        </div>
+        <div class="line">
+            <div id="hour-6" class="hour" >SIX</div>
+            <div id="hour-7" class="hour" >SEVEN</div>
+            <div id="hour-8" class="hour" >EIGHT</div>
+        </div>
+        <div class="line">
+            <div id="hour-9"  class="hour" >NINE</div>
+            <div id="hour-10" class="hour" >TEN</div>
+            <div id="hour-11" class="hour" >ELEVEN</div>
+        </div>
+        <div class="line">
+            <div id="hour-12" class="hour" >TWELVE</div>
+            <div id="oclock"               >O'CLOCK</div>
+        </div>        
+    </div>
+</body>
 </html>
